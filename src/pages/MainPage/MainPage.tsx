@@ -1,10 +1,12 @@
-import Counter from '../../components/Counter';
+import { useTheme } from "../../theme/useTheme";
 
 function MainPage(){
+    const {toggleTheme} = useTheme();
     return (  
         <>
-            <h1>MainPage</h1>
-            <Counter />
+            <div>MainPage</div>
+            <button onClick={toggleTheme}>Toggle</button>
+            
         </>
     );
 }

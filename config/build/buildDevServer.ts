@@ -5,6 +5,6 @@ export function buildDevServer(options:BuildOptions):DevServerConfiguration{
         port:options.port,
         open:true,
         historyApiFallback:true,
-        allowedHosts:'all'
+        allowedHosts:['power-messenger.ru','81.200.153.117']
     }
 }
