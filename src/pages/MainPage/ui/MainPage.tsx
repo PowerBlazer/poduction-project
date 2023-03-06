@@ -1,4 +1,6 @@
-import { useTheme } from "../../theme/useTheme";
+import { useTheme } from "app/providers/ThemeProvider";
+
+;
 
 function MainPage(){
     const {toggleTheme} = useTheme();
@@ -6,7 +8,6 @@ function MainPage(){
         <>
             <div>MainPage</div>
             <button onClick={toggleTheme}>Toggle</button>
-            
         </>
     );
 }
