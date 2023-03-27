@@ -23,7 +23,11 @@ export function AppLink (props: AppLinkProps) {
   } = props;
 
   return (
-    <Link to={to} className={classNames(style.appLink, {}, [className, style[theme]])} {...otherProps}>
+    <Link
+      to={to}
+      className={classNames(style.appLink, {}, [className, style[theme]])}
+      {...otherProps}
+    >
       {children}
     </Link>
   )
