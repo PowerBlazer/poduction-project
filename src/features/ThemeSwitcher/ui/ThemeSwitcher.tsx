@@ -7,23 +7,23 @@ import DarkIcon from 'shared/assets/icons/moon.svg';
 import style from './ThemeSwitcher.module.scss';
 
 interface ThemeSwithcerProps {
-  className?: string
+    className?: string
 }
 
 export function ThemeSwitcher (props: ThemeSwithcerProps) {
-  const {
-    className
-  } = props;
+    const {
+        className
+    } = props;
 
-  const { toggleTheme, theme } = useTheme();
+    const { toggleTheme, theme } = useTheme();
 
-  return (
-    <Button
-      className={classNames(style.themeSwitcher, {}, [className])}
-      onClick={toggleTheme}
-      theme={ThemeButton.CLEAR}
-    >
-      {theme === Theme.LIGHT ? <LightIcon fill='#FFC300'/> : <DarkIcon fill='#FFF' color='#061DD1'/>}
-    </Button>
-  )
+    return (
+        <Button
+            className={classNames(style.themeSwitcher, {}, [className])}
+            onClick={toggleTheme}
+            theme={ThemeButton.CLEAR}
+        >
+            {theme === Theme.LIGHT ? <LightIcon fill='#FFC300'/> : <DarkIcon fill='#FFF' color='#061DD1'/>}
+        </Button>
+    )
 }

@@ -6,25 +6,25 @@ import { LangSwitcher } from 'widgets/LangSwitcher';
 import style from './Sidebar.module.scss';
 
 interface SidebarProps {
-  className?: string
+    className?: string
 }
 
 export function Sidebar ({ className }: SidebarProps) {
-  const [collapsed, setCollapsed] = useState<boolean>(false);
+    const [collapsed, setCollapsed] = useState<boolean>(false);
 
-  const onToggle = () => {
-    setCollapsed(prev => !prev);
-  }
+    const onToggle = () => {
+        setCollapsed(prev => !prev);
+    }
 
-  return (
-    <div
-      className={classNames(style.sidebar, { [style.collapsed]: collapsed }, [className])}
-    >
-      <Button onClick={onToggle}>Toggle</Button>
-      <div className={style.switchers}>
-        <ThemeSwitcher />
-        <LangSwitcher className={style.lang}/>
-      </div>
-    </div>
-  )
+    return (
+        <div
+            className={classNames(style.sidebar, { [style.collapsed]: collapsed }, [className])}
+        >
+            <Button onClick={onToggle}>Toggle</Button>
+            <div className={style.switchers}>
+                <ThemeSwitcher />
+                <LangSwitcher className={style.lang}/>
+            </div>
+        </div>
+    )
 }
