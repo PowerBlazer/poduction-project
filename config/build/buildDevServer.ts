@@ -7,7 +7,7 @@ export function buildDevServer (options: BuildOptions): DevServerConfiguration {
         open: false,
         historyApiFallback: true,
         hot: true,
-        allowedHosts: ['81.200.153.117', 'power-messenger.ru'],
+        allowedHosts: ['188.225.57.132', 'power-messenger.ru'],
         host: '0.0.0.0'
     }
 }
