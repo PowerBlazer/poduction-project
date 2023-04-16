@@ -1,3 +1,4 @@
+/* eslint-disable i18next/no-literal-string */
 import { ThemeSwitcher } from 'features/ThemeSwitcher';
 import { useState } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';

@@ -6,11 +6,11 @@ import LightIcon from 'shared/assets/icons/sun.svg';
 import DarkIcon from 'shared/assets/icons/moon.svg';
 import style from './ThemeSwitcher.module.scss';
 
-interface ThemeSwithcerProps {
+interface ThemeSwitcherProps {
     className?: string
 }
 
-export function ThemeSwitcher (props: ThemeSwithcerProps) {
+export function ThemeSwitcher (props: ThemeSwitcherProps) {
     const {
         className
     } = props;
