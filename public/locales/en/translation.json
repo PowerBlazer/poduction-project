@@ -5,5 +5,7 @@
     "Язык":"English",
     "Главная":"Main",
     "О нас":"About Us",
-    "Страница не найдена": "Notfound Page"
+    "Страница не найдена": "Notfound Page",
+    "Произошла ошибка":"An error has occurred",
+    "Обновить страницу":"Reload Page"
 }
